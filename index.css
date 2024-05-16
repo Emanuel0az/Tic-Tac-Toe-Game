@@ -1,0 +1,28 @@
+#contenedor {
+    border: solid 2px black;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    max-width: 600px;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.hijoCont {
+    border: solid 1px black; */
+    justify-content: space-between;
+    padding:50px;
+    display: grid;
+    justify-content: center;
+    background-color: beige;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
