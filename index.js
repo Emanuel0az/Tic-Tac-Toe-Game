@@ -27,18 +27,33 @@ const matriz = [
     [boton1, boton2, boton3],
     [boton4, boton5, boton6],
     [boton7, boton8, boton9]
-];
+] 
 // matriz[0][0] = "x"
 console.log(matriz);
 
-
-
-let validar1 = true
+let index2;
 
 for (let index = 0; index < gato.length; index++) {
+   
     gato[index].addEventListener('click',function(){
-        gato[index].innerHTML= "X"
-       gato[3].innerHTML = "O"
+        
+        gato[index].innerHTML= "X";
+
+        
+        if ( gato[index2] != "") {
+            index2 =  Math.floor(Math.random() * 9)
+            gato[index2].innerHTML ="O"
+           
+           
+        }else{
+            index2 =  Math.floor(Math.random() * 9)
+            gato[index2].innerHTML ="O"
+        }
+       
+        
+
+
+
     })
         
 }   
