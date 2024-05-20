@@ -12,22 +12,63 @@ let boton7 = document.getElementById('boton7')
 let boton8 = document.getElementById('boton8')
 let boton9 = document.getElementById('boton9')
 
-// crea variables con el valor de "X" y "O"
-let text_0 = "O"
-let text_x = "X"
-// let jugador = text_0
-
 
 // es una matriz que contiene las 9 casillas del juego
-const matriz = [
+let matriz = [
     [boton1, boton2, boton3],
     [boton4, boton5, boton6],
     [boton7, boton8, boton9]
 ]
+console.log(matriz);
+
+function validarGane (){
+
+    let flag = 0;
+    // validacion de ganes de las filas
+    if(matriz[0][2].textContent === "X" && matriz[0][1].textContent === "X" && matriz[0][0].textContent === "X"){
+        return alert ("has ganado")
+    }else if(matriz[1][0].textContent === "X" && matriz[1][1].textContent === "X" && matriz[1][2].textContent === "X"){
+        return alert ("has ganado")
+    }else if(matriz[2][2].textContent === "X" && matriz[2][1].textContent === "X" && matriz[2][0].textContent === "X"){
+        return alert("has ganado")
+
+
+        // validacion de ganes de las colunmas
+    }else if(matriz[0][0].textContent === "X" && matriz[1][0].textContent === "X" && matriz[2][0].textContent === "X"){
+        return alert ("has ganado")
+    }else if(matriz[0][1].textContent === "X" && matriz[1][1].textContent === "X" && matriz[2][1].textContent === "X"){
+        return alert(" has ganado")
+    }else if(matriz[0][2].textContent === "X" && matriz[1][2].textContent === "X" && matriz[2][2].textContent === "X"){
+        return alert("has ganado")
+
+
+        // validacion de ganes de diagonales 
+    }else if(matriz[0][0].textContent === "X" && matriz[1][1].textContent === "X" && matriz[2][2].textContent === "X"){
+        return alert("has ganado")
+    }else if(matriz[0][2].textContent === "X" && matriz[1][1].textContent === "X" && matriz[2][0].textContent === "X"){
+        return alert("has ganado")
 
 
 
+    }
 
+    for (let i = 0; i < matriz.length; i++) {
+        for (let j = 0; j < matriz.length; j++) {
+            if (matriz[i][j].textContent != "") {
+                flag++
+            }
+            
+        }
+    }
+
+    console.log(matriz);
+    if (flag == 9) {
+        alert("Empate")
+        
+    }
+   
+
+}
 // funcion para las casillas vacias de forma aleatorias
 function aleatorio() {
 
@@ -56,7 +97,7 @@ for (let index = 0; index < gato.length; index++) {
                 // verifica si la casilla esta vacia para marcar
                 if (gato[index].innerHTML === "") {
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
-
+                    console.log(matriz,"soy la matriz");
 
                     let maquina = aleatorio(); // busca un espacio vacio para la maquina
                     setTimeout(function() {
@@ -65,17 +106,18 @@ for (let index = 0; index < gato.length; index++) {
             
                         }
                     }, 1000);
+
                 }
-                
-                
+                validarGane()
         })
 
 } 
 
 
+
 function validarFilas() {
-    for (let j = 0; j < array.length; j++) {
-        for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < gato.length; j++) {
+        for (let i = 0; i < gato.length; i++) {
             
         }        
     }
