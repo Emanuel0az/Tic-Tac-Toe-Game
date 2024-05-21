@@ -81,34 +81,44 @@ function validarGaneX (){
 
 
 
-function validarGaneO (){
-    if(matriz[0][2].textContent === "O" && matriz[0][1].textContent === "O" && matriz[0][0].textContent === "O"){
-        return alert ("te han ganado")
-    }else if(matriz[1][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[1][2].textContent === "O"){
-        return alert ("te han ganado")
-    }else if(matriz[2][2].textContent === "O" && matriz[2][1].textContent === "O" && matriz[2][0].textContent === "O"){
-        return alert("te han ganado")
+function mostrarMensaje(mensaje) {
+    document.getElementById('message').textContent = mensaje;
+}
+
+// let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
+
+function validarGaneO() {
+        // validacion de ganes de las filas
+    if (matriz[0][2].textContent === "O" && matriz[0][1].textContent === "O" && matriz[0][0].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
+
+    } else if (matriz[1][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[1][2].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
+
+    } else if (matriz[2][2].textContent === "O" && matriz[2][1].textContent === "O" && matriz[2][0].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
 
 
         // validacion de ganes de las colunmas
-    }else if(matriz[0][0].textContent === "O" && matriz[1][0].textContent === "O" && matriz[2][0].textContent === "O"){
-        return alert ("te han ganado")
-    }else if(matriz[0][1].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][1].textContent === "O"){
-        return alert("te han ganado")
-    }else if(matriz[0][2].textContent === "O" && matriz[1][2].textContent === "O" && matriz[2][2].textContent === "O"){
-        return alert("te han ganado")
+    } else if (matriz[0][0].textContent === "O" && matriz[1][0].textContent === "O" && matriz[2][0].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
+
+    } else if (matriz[0][1].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][1].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
+
+    } else if (matriz[0][2].textContent === "O" && matriz[1][2].textContent === "O" && matriz[2][2].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
 
 
         // validacion de ganes de diagonales 
-    }else if(matriz[0][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][2].textContent === "O"){
-        return alert("te han ganado")
-    }else if(matriz[0][2].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][0].textContent === "O"){
-        return alert("te han ganado")
+    } else if (matriz[0][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][2].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
 
-
-
+    } else if (matriz[0][2].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][0].textContent === "O") {
+        return mostrarMensaje("Te han ganado");
     }
 }
+
 
 
 
@@ -143,18 +153,17 @@ for (let index = 0; index < gato.length; index++) {
                 if (gato[index].innerHTML === "") {
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
                     console.log(matriz,"soy la matriz");
+                    validarGaneX()
 
                     let maquina = aleatorio(); // busca un espacio vacio para la maquina
                     setTimeout(function() {
                         if (maquina !== null) {
                             gato[maquina].innerHTML = "O"; // si la casilla esta vacia marca con una "O"
-            
+                            validarGaneO()
                         }
                     }, 1000);
-validarGaneO()
                 }
                 
-                validarGaneX()
         })
         
 } 

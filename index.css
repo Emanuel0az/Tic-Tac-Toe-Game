@@ -36,3 +36,8 @@ h1 {
 .cell:hover {
     background-color: #d0d0d0;
 }
+
+p {
+display: grid;
+justify-content: center;
+}
