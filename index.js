@@ -21,10 +21,14 @@ let matriz = [
 ]
 console.log(matriz);
 
+
+
+// funcion que permite cambiar de letra al parametro simbolo
 function validarGanar (simbolo){
 
     let flag = 0;
 
+    // ciclo para ver las casillas vacias y validar el empate
     for (let i = 0; i < matriz.length; i++) {
         for (let j = 0; j < matriz.length; j++) {
             if (matriz[i][j].textContent != "") {
@@ -115,7 +119,7 @@ function validarGanar (simbolo){
              return true
 
 
-
+        //  calida el empate
     }else  if (flag == 9) {
         setTimeout(function() {  
              alert ("Empate")},1000)
@@ -129,7 +133,7 @@ return false
 }
 
 
-
+// funcion para crear un elemento (NO IMPLEMENTADA)
 function mostrarMensaje(mensaje) {
     document.getElementById('message').innerHTML = mensaje;
 }
@@ -260,7 +264,7 @@ for (let index = 0; index < gato.length; index++) {
                 // verifica si la casilla esta vacia para marcar
                 if (gato[index].innerHTML === "") {
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
-                    let ganeX = validarGanar("X")
+                    let ganeX = validarGanar("X") // le da a la funcion el valor de "X"
                     console.log(matriz,"soy la matriz");
                     console.log(ganeX);
                     if (!ganeX) {
@@ -269,7 +273,7 @@ for (let index = 0; index < gato.length; index++) {
 
                         if (maquina !== null) {
                             gato[maquina].innerHTML = "O"; // si la casilla esta vacia marca con una "O"
-                            let ganaO = validarGanar("O")
+                            let ganaO = validarGanar("O") // le da a la funcion el valor de "O"
                         }
                     }, 800); 
                    
