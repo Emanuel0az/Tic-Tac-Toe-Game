@@ -21,32 +21,40 @@ let matriz = [
 ]
 console.log(matriz);
 
-function validarGane (){
+function validarGaneX (){
 
     let flag = 0;
     // validacion de ganes de las filas
     if(matriz[0][2].textContent === "X" && matriz[0][1].textContent === "X" && matriz[0][0].textContent === "X"){
-        return alert ("has ganado")
+        setTimeout(function() { 
+        return alert ("has ganado")},1000)
     }else if(matriz[1][0].textContent === "X" && matriz[1][1].textContent === "X" && matriz[1][2].textContent === "X"){
-        return alert ("has ganado")
+        setTimeout(function() { 
+            return alert ("has ganado")},1000)
     }else if(matriz[2][2].textContent === "X" && matriz[2][1].textContent === "X" && matriz[2][0].textContent === "X"){
-        return alert("has ganado")
+        setTimeout(function() { 
+            return alert ("has ganado")},1000)
 
 
         // validacion de ganes de las colunmas
     }else if(matriz[0][0].textContent === "X" && matriz[1][0].textContent === "X" && matriz[2][0].textContent === "X"){
-        return alert ("has ganado")
+        setTimeout(function() { 
+            return alert ("has ganado")},1000)
     }else if(matriz[0][1].textContent === "X" && matriz[1][1].textContent === "X" && matriz[2][1].textContent === "X"){
-        return alert(" has ganado")
+        setTimeout(function() { 
+            return alert ("has ganado")},1000)
     }else if(matriz[0][2].textContent === "X" && matriz[1][2].textContent === "X" && matriz[2][2].textContent === "X"){
-        return alert("has ganado")
+        setTimeout(function() { 
+            return alert ("has ganado")},1000)
 
 
         // validacion de ganes de diagonales 
     }else if(matriz[0][0].textContent === "X" && matriz[1][1].textContent === "X" && matriz[2][2].textContent === "X"){
-        return alert("has ganado")
+        setTimeout(function() { 
+            return alert ("has ganado")},1000)
     }else if(matriz[0][2].textContent === "X" && matriz[1][1].textContent === "X" && matriz[2][0].textContent === "X"){
-        return alert("has ganado")
+        rsetTimeout(function() { 
+            return alert ("has ganado")},1000)
 
 
 
@@ -63,12 +71,49 @@ function validarGane (){
 
     console.log(matriz);
     if (flag == 9) {
-        alert("Empate")
+        setTimeout(function() { 
+            return alert ("Empate")},1000)
         
     }
    
 
 }
+
+
+
+function validarGaneO (){
+    if(matriz[0][2].textContent === "O" && matriz[0][1].textContent === "O" && matriz[0][0].textContent === "O"){
+        return alert ("te han ganado")
+    }else if(matriz[1][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[1][2].textContent === "O"){
+        return alert ("te han ganado")
+    }else if(matriz[2][2].textContent === "O" && matriz[2][1].textContent === "O" && matriz[2][0].textContent === "O"){
+        return alert("te han ganado")
+
+
+        // validacion de ganes de las colunmas
+    }else if(matriz[0][0].textContent === "O" && matriz[1][0].textContent === "O" && matriz[2][0].textContent === "O"){
+        return alert ("te han ganado")
+    }else if(matriz[0][1].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][1].textContent === "O"){
+        return alert("te han ganado")
+    }else if(matriz[0][2].textContent === "O" && matriz[1][2].textContent === "O" && matriz[2][2].textContent === "O"){
+        return alert("te han ganado")
+
+
+        // validacion de ganes de diagonales 
+    }else if(matriz[0][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][2].textContent === "O"){
+        return alert("te han ganado")
+    }else if(matriz[0][2].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][0].textContent === "O"){
+        return alert("te han ganado")
+
+
+
+    }
+}
+
+
+
+
+
 // funcion para las casillas vacias de forma aleatorias
 function aleatorio() {
 
@@ -106,11 +151,12 @@ for (let index = 0; index < gato.length; index++) {
             
                         }
                     }, 1000);
-
+validarGaneO()
                 }
-                validarGane()
+                
+                validarGaneX()
         })
-
+        
 } 
 
 
