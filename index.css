@@ -41,7 +41,7 @@ h1 {
     border-radius: 5px;
     font-size: 34px;
     font-weight: bold;
-    color: #333;
+    color: #D4AF37;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -55,11 +55,14 @@ display: grid;
 justify-content: center;
 }
 
-/* body {
-    background-image:url(src/elden3.jpg) ;
-    background-size: cover;
-    background-position: center center;
-} */
+button {
+    background-color: #D4AF37;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px black;
+    cursor: pointer;
+}
 
 body, html {
     margin: 0;
