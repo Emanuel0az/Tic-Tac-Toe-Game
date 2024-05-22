@@ -174,7 +174,7 @@ for (let index = 0; index < gato.length; index++) {
         gato[index].addEventListener('click', function() {
             
                 // verifica si la casilla esta vacia para marcar
-                if (gato[index].innerHTML === "") {
+               
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
                     let ganeX = validarGanar("X") // le da a la funcion el valor de "X"
                     console.log(matriz,"soy la matriz");
@@ -195,7 +195,7 @@ for (let index = 0; index < gato.length; index++) {
                   
                     
                 
-                }
+                
  
 
         })
