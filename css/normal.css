@@ -1,8 +1,8 @@
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 4em;
-    color: #D4AF37; /* Un dorado similar al del logo */
-    text-shadow: 2px 2px 4px #000000; /* Sombra para mayor impacto */
+    color: white; /* Un dorado similar al del logo */
+    text-shadow: 2px 2px 4px #6def6f; /* Sombra para mayor impacto */
     letter-spacing: 0.05em; /* Espaciado entre letras */
     display: grid;
     justify-content: center;
@@ -37,7 +37,7 @@ h1 {
     align-items: center;
     width: 100px;
     height: 100px;
-    background-color: #16161698;
+    background-color: #65c86660;
     border-radius: 5px;
     font-size: 34px;
     font-weight: bold;
@@ -47,7 +47,7 @@ h1 {
 }
 
 .cell:hover {
-    background-color: #650301b8;
+    background-color: rgba(255, 255, 255, 0.436);
 }
 
 p {
@@ -63,8 +63,11 @@ justify-content: center;
 }
 
 #resetBtn {
-    background-color: #d4af37;
-    box-shadow: 0 4px 8px black;
+    background-color: white;
+    color: #6def6f;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px #6def6f;
+    border-radius: 2px;
     cursor: pointer;
     padding: 5px;
 }
@@ -81,8 +84,8 @@ body, html {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #d4af37;
-    color: black;
+    background-color: white;
+    color: #6def6f;
     padding: 16px;
     font-size: 16px;
     font-family: 'Cinzel', serif;
@@ -92,7 +95,7 @@ body, html {
   
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #be0502c5;
+    background-color: #6def6f7c;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -105,7 +108,7 @@ body, html {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #d4af37;
+    background-color: white;
     font-family: 'Cinzel', serif;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -114,14 +117,14 @@ body, html {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: #6def6f;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #650301b8;}
+  .dropdown-content a:hover {background-color: #6def6f50;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
