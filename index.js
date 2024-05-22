@@ -134,103 +134,11 @@ return false
 
 
 // funcion para crear un elemento (NO IMPLEMENTADA)
-function mostrarMensaje(mensaje) {
-    document.getElementById('message').innerHTML = mensaje;
-}
-
-// let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
-
-// function validarGaneO() {
-   
-//     console.log(matriz[0][2].textContent == "O",matriz[0][1].textContent == "O",matriz[0][0].textContent == "O")
-//     // validacion de ganes de las colunmas
-//     if(matriz[0][0].textContent == "O" && matriz[0][1].textContent == "O" && matriz[0][2].textContent == "O"){
-
-//         alert("Ganaste")
-        
-       
-//     }else if(matriz[1][0].textContent == "O" && matriz[1][1].textContent == "O" && matriz[1][2].textContent == "O"){
-//         console.log("holaaaaa")
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-//     }else if(matriz[2][2].textContent == "O" && matriz[2][1].textContent == "O" && matriz[2][0].textContent == "O"){
-//         console.log("holaaaaa")
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-
-          
-//     }else if(matriz[0][0].textContent == "O" && matriz[1][0].textContent == "O" && matriz[2][0].textContent == "O"){
-//         console.log("holaaaaa")
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-//     }else if(matriz[0][1].textContent == "O" && matriz[1][1].textContent == "O" && matriz[2][1].textContent == "O"){
-//         console.log("holaaaaa")
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-//     }else
-    
-//     if(matriz[0][2].textContent == "O" && matriz[1][2].textContent == "O" && matriz[2][2].textContent == "O"){
-    
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-
-
-//         // validacion de ganes de diagonales 
-//     }else if(matriz[0][0].textContent == "O" && matriz[1][1].textContent == "O" && matriz[2][2].textContent == "O"){
-//         console.log("holaaaaa")
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-//     }else if(matriz[0][2].textContent == "O" && matriz[1][1].textContent == "O" && matriz[2][0].textContent == "O"){
-//         console.log("holaaaaa")
-//         setTimeout(function() { 
-//             return alert ("Te han ganado")},1000)
-
-
-
-//     }
-
-    
-
-// }
-//         // validacion de ganes de las filas
-//         console.log(matriz[0][2].textContent === "O")
-//     if (matriz[0][2].textContent === "O" && matriz[0][1].textContent === "O" && matriz[0][0].textContent === "O") {
-//         // mostrarMensaje("Te han ganado");
-//         return alert("hola")
-
-//     } else if (matriz[1][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[1][2].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-//         return alert("hola")
-
-//     } else if (matriz[2][2].textContent === "O" && matriz[2][1].textContent === "O" && matriz[2][0].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-//         return alert("hola")
-
-//         // validacion de ganes de las colunmas
-//     } else if (matriz[0][0].textContent === "O" && matriz[1][0].textContent === "O" && matriz[2][0].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-
-//         return alert("hola")
-//     } else if (matriz[0][1].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][1].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-//         return alert("hola")
-
-//     } else if (matriz[0][2].textContent === "O" && matriz[1][2].textContent === "O" && matriz[2][2].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-
-//         return alert("hola")
-//         // validacion de ganes de diagonales 
-//     } else if (matriz[0][0].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][2].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-//         return alert("hola")
-
-//     } else if (matriz[0][2].textContent === "O" && matriz[1][1].textContent === "O" && matriz[2][0].textContent === "O") {
-//         // return mostrarMensaje("Te han ganado");
-//         return alert("hola")
-//     }
+// function mostrarMensaje(mensaje) {
+//     document.getElementById('message').innerHTML = mensaje;
 // }
 
-
+// // let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
 
 
 
