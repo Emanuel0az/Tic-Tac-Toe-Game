@@ -37,6 +37,10 @@ function validarGanar (simbolo){
             
         }
     }
+
+
+
+
     // validacion de ganes de las filas
     if(matriz[0][2].textContent === simbolo && matriz[0][1].textContent === simbolo && matriz[0][0].textContent === simbolo){
         
@@ -134,11 +138,11 @@ return false
 
 
 // funcion para crear un elemento (NO IMPLEMENTADA)
-// function mostrarMensaje(mensaje) {
-//     document.getElementById('message').innerHTML = mensaje;
-// }
+function mostrarMensaje(mensaje) {
+    document.getElementById('message').innerHTML = mensaje;
+}
 
-// // let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
+// let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
 
 
 
@@ -208,3 +212,33 @@ function validarFilas() {
     }
 }
 
+const resetBtn = document.getElementById('resetBtn')
+
+resetBtn.addEventListener('click',() => {
+    for (let index = 0; index < gato.length; index++) {
+       gato[index].innerHTML = ""
+        
+    }
+})
+
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
