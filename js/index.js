@@ -180,7 +180,9 @@ for (let index = 0; index < gato.length; index++) {
                     console.log(matriz,"soy la matriz");
                     console.log(ganeX);
                     if (!ganeX) {
-                        let maquina = aleatorio(); // busca un espacio vacio para la maquina
+                        let maquina = Math.floor(Math.random()*8); // busca un espacio vacio para la maquina
+                        console.log(maquina)
+                        
                     setTimeout(function() {
 
                         if (maquina !== null) {
