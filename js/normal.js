@@ -13,6 +13,14 @@ let boton8 = document.getElementById('boton8')
 let boton9 = document.getElementById('boton9')
 
 
+let edad = 18
+
+let resultado = (edad>8) ? true : false;
+
+
+
+
+
 // es una matriz que contiene las 9 casillas del juego
 let matriz = [
     [boton1, boton2, boton3],
@@ -20,6 +28,8 @@ let matriz = [
     [boton7, boton8, boton9]
 ]
 console.log(matriz);
+
+
 
 
 
@@ -138,9 +148,9 @@ return false
 
 
 // funcion para crear un elemento (NO IMPLEMENTADA)
-function mostrarMensaje(mensaje) {
-    document.getElementById('message').innerHTML = mensaje;
-}
+// function mostrarMensaje(mensaje) {
+//     let mesege = document.getElementById('message').innerHTML = mensaje;
+// }
 
 // let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
 
@@ -167,6 +177,9 @@ function aleatorio() {
     }
     return null; //busca una casilla vacia en el i y si no hay devuelbe nulo
 }
+
+let turnoX = document.getElementById('message')
+let turnoO = document.getElementById('message')
         
 // itera sobre las casillas del array
 for (let index = 0; index < gato.length; index++) {
@@ -175,11 +188,16 @@ for (let index = 0; index < gato.length; index++) {
             
                 // verifica si la casilla esta vacia para marcar
                 if (gato[index].innerHTML === "") {
+
+                  
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
                     let ganeX = validarGanar("X") // le da a la funcion el valor de "X"
-                    console.log(matriz,"soy la matriz");
+                    turnoX.innerHTML = "Turno de O"
                     
-                    console.log(ganeX);
+                    console.log(turnoX);
+                    // console.log(matriz,"soy la matriz");
+                    
+                    // console.log(ganeX);
                     if (!ganeX) {
                         let maquina = aleatorio(); // busca un espacio vacio para la maquina
                     setTimeout(function() {
@@ -187,14 +205,13 @@ for (let index = 0; index < gato.length; index++) {
                         if (maquina !== null) {
                             gato[maquina].innerHTML = "O"; // si la casilla esta vacia marca con una "O"
                             let ganaO = validarGanar("O") // le da a la funcion el valor de "O"
+                            turnoO.innerHTML = "Turno de X"
+                            console.log(turnoO);
                         }
                     }, 800); 
                    
                     }
-                    
-                                    
-                  
-                    
+
                 
                 }
  
