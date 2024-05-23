@@ -193,7 +193,7 @@ for (let index = 0; index < gato.length; index++) {
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
                     let ganeX = validarGanar("X") // le da a la funcion el valor de "X"
                     turnoX.innerHTML = "Turno de O"
-                    
+                     
                     console.log(turnoX);
                     // console.log(matriz,"soy la matriz");
                     
@@ -220,11 +220,16 @@ for (let index = 0; index < gato.length; index++) {
         
 } 
 
+// variable con el valor del boton
 const resetBtn = document.getElementById('resetBtn')
 
+
+// evento del botom para limpiar los espacios del juego
 resetBtn.addEventListener('click',() => {
     for (let index = 0; index < gato.length; index++) {
        gato[index].innerHTML = ""
+       turnoO.innerHTML = ""
+       turnoX.innerHTML =""
         
     }
 })
