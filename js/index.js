@@ -154,7 +154,7 @@ function aleatorio() {
     // itera sobre las cassillas del array
     for (let index = 0; index < gato.length; index++) {
         // verifica si cada cassilla esta vacia
-        if (gato[index].innerHTML === "") {
+        if (gato[index].innerHTML === "X" && gato[index].innerHTML != "") {
             espacio.push(index);
         }
     }
@@ -174,22 +174,20 @@ for (let index = 0; index < gato.length; index++) {
         gato[index].addEventListener('click', function() {
             
                 // verifica si la casilla esta vacia para marcar
-                if (gato[index].innerHTML === "") {
+               
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
                     let ganeX = validarGanar("X") // le da a la funcion el valor de "X"
                     console.log(matriz,"soy la matriz");
                     console.log(ganeX);
                     if (!ganeX) {
-                        let maquina = Math.floor(Math.random()*8); // busca un espacio vacio para la maquina
-                        console.log(maquina)
-                        
+                        let maquina = aleatorio(); // busca un espacio vacio para la maquina
                     setTimeout(function() {
 
                         if (maquina !== null) {
                             gato[maquina].innerHTML = "O"; // si la casilla esta vacia marca con una "O"
                             let ganaO = validarGanar("O") // le da a la funcion el valor de "O"
                         }
-                    }, 800); 
+                    }, 100); 
                    
                     }
                     
@@ -197,7 +195,7 @@ for (let index = 0; index < gato.length; index++) {
                   
                     
                 
-                }
+                
  
 
         })

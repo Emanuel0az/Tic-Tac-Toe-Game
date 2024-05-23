@@ -178,6 +178,7 @@ for (let index = 0; index < gato.length; index++) {
                     gato[index].innerHTML = "X"; // agrega una "X" a la casilla vacia
                     let ganeX = validarGanar("X") // le da a la funcion el valor de "X"
                     console.log(matriz,"soy la matriz");
+                    
                     console.log(ganeX);
                     if (!ganeX) {
                         let maquina = aleatorio(); // busca un espacio vacio para la maquina
@@ -202,16 +203,6 @@ for (let index = 0; index < gato.length; index++) {
         
 } 
 
-
-
-function validarFilas() {
-    for (let j = 0; j < gato.length; j++) {
-        for (let i = 0; i < gato.length; i++) {
-            
-        }        
-    }
-}
-
 const resetBtn = document.getElementById('resetBtn')
 
 resetBtn.addEventListener('click',() => {
@@ -220,6 +211,20 @@ resetBtn.addEventListener('click',() => {
         
     }
 })
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
