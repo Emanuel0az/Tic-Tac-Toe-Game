@@ -60,10 +60,10 @@ function validarGanar (simbolo){
         
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -71,10 +71,10 @@ function validarGanar (simbolo){
     }else if(matriz[1][0].textContent === simbolo && matriz[1][1].textContent === simbolo && matriz[1][2].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -82,10 +82,10 @@ function validarGanar (simbolo){
     }else if(matriz[2][2].textContent === simbolo && matriz[2][1].textContent === simbolo && matriz[2][0].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -96,10 +96,10 @@ function validarGanar (simbolo){
     }else if(matriz[0][0].textContent === simbolo && matriz[1][0].textContent === simbolo && matriz[2][0].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -107,10 +107,10 @@ function validarGanar (simbolo){
     }else if(matriz[0][1].textContent === simbolo && matriz[1][1].textContent === simbolo && matriz[2][1].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -118,10 +118,10 @@ function validarGanar (simbolo){
     }else if(matriz[0][2].textContent === simbolo && matriz[1][2].textContent === simbolo && matriz[2][2].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -132,10 +132,10 @@ function validarGanar (simbolo){
     }else if(matriz[0][0].textContent === simbolo && matriz[1][1].textContent === simbolo && matriz[2][2].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -143,10 +143,10 @@ function validarGanar (simbolo){
     }else if(matriz[0][2].textContent === simbolo && matriz[1][1].textContent === simbolo && matriz[2][0].textContent === simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
-                alert ("has ganado")
+                alert ("Ha Ganado X")
                 contadorX++;
             }else {
-                alert ("Te han ganado")
+                alert ("Ha Ganado O")
                 contadorO++;
             }
          },1000)
@@ -173,7 +173,7 @@ return false
 //     let mesege = document.getElementById('message').innerHTML = mensaje;
 // }
 
-// let mensajeWin = document.getElementById('message').textContent = "Te han ganado"
+// let mensajeWin = document.getElementById('message').textContent = "Ha Ganado O"
 
 
 
