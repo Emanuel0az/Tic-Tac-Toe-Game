@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/facil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap"><body>
+    <h1 class="aggressive">TIC TAC TOE</h1>
+    
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Modo de Juego</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">Dificil</a>
+          <a href="normal.html">Normal</a>
+          <a href="facil.html">Facil</a>
+        </div>
+      </div>
+
+    <div class="container">
+        <div class="cell" id="boton1"></div>
+        <div class="cell" id="boton2"></div>
+        <div class="cell" id="boton3"></div>
+        <div class="cell" id="boton4"></div>
+        <div class="cell" id="boton5"></div>
+        <div class="cell" id="boton6"></div>
+        <div class="cell" id="boton7"></div>
+        <div class="cell" id="boton8"></div>
+        <div class="cell" id="boton9"></div>
+    </div>
+
+    <div class="btnDiv"><button type="button" id="resetBtn">Volver a Jugar</button></div>
+
+    <p id="message"></p>
+
+    <video autoplay muted loop class="videoFondo">
+        <source src="video/castle-on-the-sky-moewalls-com.mp4" type="video/mp4">
+    </video>
+
+    <audio id="musica"autoplay loop>
+      <source src="audio/ytmp3free.cc_musica-de-fondo-sin-copyright-youtubemp3free.org.mp3">
+    </audio>
+
+
+    <script src="js/facil.js"></script>
+</body>
+</html>
