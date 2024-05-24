@@ -123,6 +123,7 @@ function validarGanar (simbolo){
             }else {
                 alert ("Ha Ganado O")
                 contadorO++;
+                
             }
          },1000)
              return true
@@ -169,6 +170,7 @@ return false
 
 }
 
+// gato = JSON.parse(localStorage.getItem("gato")) || []
 
 // funcion para crear un elemento (NO IMPLEMENTADA)
 // function mostrarMensaje(mensaje) {
