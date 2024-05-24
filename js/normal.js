@@ -17,6 +17,10 @@ let edad = 18
 
 let resultado = (edad>8) ? true : false;
 
+let contadorX = document.getElementById ('victoriasX')
+let contadorO = document.getElementById ('victoriasO')
+let contadorEmpate = document.getElementById ('empates')
+
 
 
 
@@ -57,8 +61,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
          return true
@@ -66,8 +72,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -75,8 +83,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -87,8 +97,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -96,8 +108,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -105,8 +119,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -117,8 +133,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -126,8 +144,10 @@ function validarGanar (simbolo){
         setTimeout(function() { 
             if(simbolo == "X"){
                 alert ("has ganado")
+                contadorX++;
             }else {
                 alert ("Te han ganado")
+                contadorO++;
             }
          },1000)
              return true
@@ -136,7 +156,8 @@ function validarGanar (simbolo){
         //  calida el empate
     }else  if (flag == 9) {
         setTimeout(function() {  
-             alert ("Empate")},1000)
+             alert ("Empate")
+             contadorEmpate++;},1000)
         return true
     }
 return false
@@ -233,6 +254,10 @@ resetBtn.addEventListener('click',() => {
         
     }
 })
+
+
+
+
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
