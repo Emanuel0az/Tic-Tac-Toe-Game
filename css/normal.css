@@ -33,14 +33,14 @@ h1 {
 
 #contadores {
   display: grid;
-  grid-template-columns: 6% 6% 6%;
+  grid-template-columns: 9% 9% 9%;
   justify-content: center;
   font-size: 19px;
   color: white;
   text-shadow: 2px 2px 4px #6def6f;
   font-family: 'Cinzel', serif;
-  margin-top: 10px;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-left: 17px;
 }
 
 
@@ -71,7 +71,7 @@ font-size: 20px;
 color: white;
 text-shadow: 2px 2px 4px #6def6f;
 font-family: 'Cinzel', serif;
-margin-top: -70px;
+margin-top: -120px;
 }
 
 .btnDiv{

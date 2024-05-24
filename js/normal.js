@@ -145,9 +145,11 @@ function validarGanar (simbolo){
             if(simbolo == "X"){
                 alert ("Ha Ganado X")
                 contadorX++;
+                contadorX.innerHTML = "Victorias X =" + contadorX
             }else {
                 alert ("Ha Ganado O")
                 contadorO++;
+                contadorO.innerHTML = "Victorias O =" + contadorO
             }
          },1000)
              return true
